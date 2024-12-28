@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leakowanie.pl</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Dodaj favicon w formacie .jpg -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+</head>
+<body>
+
+    <!-- Tło z wideo -->
+    <div class="background-video">
+        <video autoplay muted loop id="bg-video">
+            <source src="tlo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Główna zawartość strony -->
+    <div class="content" id="main-content">
+        <header class="header-container">
+            <h1>Hello</h1>
+        </header>
+
+        <section class="cta">
+            <a href="#" class="btn" id="start-button">Zacznij Teraz</a>
+        </section>
+    </div>
+
+    <!-- HUD z zakładkami -->
+    <div class="hud" id="hud" style="display: none;">
+        <div class="tabs">
+            <button class="tab" onclick="changeTabWithAnimation('main')">???</button>
+            <button class="tab" onclick="changeTabWithAnimation('tab1')">Leak 1</button>
+            <button class="tab" onclick="changeTabWithAnimation('tab2')">Leak 2</button>
+            <button class="tab" onclick="changeTabWithAnimation('tab3')">Leak 3</button>
+            <button class="tab kliknij-tab" onclick="changeTabWithAnimation('jumpscare')">???</button>
+        </div>
+        
+        <div class="tab-content">
+            <div id="main" class="tab-pane active">
+                <h2>Fuck You </h2>
+            </div>
+
+            <div id="tab1" class="tab-pane">
+
+                <h2></h2>
+                <img src="images/leak1.jpg" alt="Opis zdjęcia Leak 1" id="leak1-image" class="media-preview">
+                <div id="tab1-description">
+                    <p>Imię: Kevin</p>
+                    <p>Nazwisko: Patla</p>
+                    <p>Numer Telefonu: 665 419 029</p>
+                    <p>FB: https://www.facebook.com/profile.php?id=61552496065414</p>
+                </div>
+            </div>
+
+            <div id="tab2" class="tab-pane">
+                <h2>ospek29</h2>
+                <img src="images/leak2.jpg" alt="Likujemy" id="leak3-image" class="media-preview">
+                <div id="tab3-description">
+                    <p>Imię: Igor</p>
+                    <p>Nazwisko: Haluszczak</p>
+                    <p>Numer Telefonu: 513 221 696</p>
+                    <p>FB: https://www.facebook.com/profile.php?id=100092254642439</p>
+                    </p>Miejsce zamieszkania: Gdańsk, Ul. Piastowska</p>
+                    </p>IP:37.47.217.148</p>
+                    </p>Mail:ospektop@wp.pl</p>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab-pane">
+                <h2>Szymon Dulik</h2>
+                <img src="images/leak3.jpg" alt="Likujemy" id="leak3-image" class="media-preview">
+                <div id="tab3-description">
+                    <p>Imię:Szymon</p>
+                    <p>Nazwisko:Dulik</p>
+                    <p>Numer Telefonu:791 965 458</p>
+                    <p>FB:https://www.facebook.com/profile.php?id=100083178634407</p>
+                    </p>Miejsce zamieszkania:Podkarpacie, Rzeszów, Jaślany-388</p>
+                    </p>Imię Ojca:Wiesław</p>
+                    </p>Imię Matki:Ewa</p>
+                    </p>Numer Ojca:702 505 841</p>
+                    </p>Numer Matki:535 835 741</p>
+                    </p>Profil Facebook Ojca:https://www.facebook.com/dulikwieslaw/about</p>
+                    </p>Profil Facebook Matki:https://www.facebook.com/ewa.dulik.35</p>
+                    </p>Zdjęcie Ojca: ttps://imgur.com/a/TWy4AUB</p>
+                    </p>Zdjęcie Ojca:https://imgur.com/a/TWy4AUB</p>
+
+                </div>
+            </div>
+
+            <div id="jumpscare" class="tab-pane">
+                <video controls autoplay>
+                    <source src="jumpscare.mp4" type="video/mp4">
+                    Twoja przeglądarka nie obsługuje tego formatu wideo.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Tło muzyczne z pliku audio -->
+    <audio id="background-music" loop></audio>
+
+    <!-- Ikona linku w lewym dolnym rogu -->
+<div id="icon-link" class="icon-link">
+    <a href="https://discord.gg/xUw2XJqndt" target="_blank">
+        <img src="ikona.png" alt="Ikona" class="icon-img">
+    </a>
+</div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
